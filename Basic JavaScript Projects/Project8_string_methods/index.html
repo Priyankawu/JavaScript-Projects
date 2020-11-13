@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Strings</title>
+        <script src="JS/main.js"></script>
+    </head>
+    <body>
+        <p id="concatenate"></p>
+        <button onclick="full_Sentence()"> click here for a sentence</button>
+
+        <p id="Slice"></p>
+        <button onclick="slice_Method()">click here</button>
+
+        <p id="Numbers_to_string">number</p>
+        <button onclick="string_Method()">Number to String</button>
+
+        <p id = "Precision">precision</p>
+        <button onclick="precision_Method()">Precision number of numbers</button>
+
+        <script>
+            var num = 54.987;
+            var str = num.toFixed(3);
+            document.write(num.toFixed(2)); //number to string: rounds the number to how many digits after decimal you specify
+            var string = "I don't understand valueOf()";
+            var string1 = string.valueOf();
+            document.write(string1);
+        </script>
+    </body>
+    </html>
