@@ -36,7 +36,7 @@
     document.write("Priyanka"=="Thakan" || 10<20);
     document.write(45<29 || 4<1);
     document.write("  NOT operator ");
-    
+
     function not_Function(){
         document.getElementById("Not").innerHTML = !(20>10);
     }
@@ -44,4 +44,7 @@
     function not_Function1(){
         document.getElementById("Not1").innerHTML = !(20>100);
     }
-   
+    document.write(" Ternary Operator ");
+    //Ternary operator , Variable_name = (condition) ? true : false;
+    document.write(Bigger = (5>1) ? "Left number is bigger" : "Right number is bigger.");
+    
