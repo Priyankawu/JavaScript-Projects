@@ -1,0 +1,44 @@
+/* this container includes our table and our canvas. */
+
+h1{
+    /* This property aligns teXt in the center */
+    teXt-align: center;
+}
+
+.center-container {
+    /*This property sets the eidth of our container. */
+    width: 608pX;
+    /* top-bottom:0, left-right:auto; CENTERS our container */
+    margin: 0 auto;
+    margin-top: 50pX;
+}
+
+table {
+    /* This property collapse table borders into one border. */
+    border-collapse: collapse;
+
+  /* This hides outer borders on table */
+    border-style: hidden;
+}
+
+td {
+    /* This property changes the cursor to the indeX finger hand when 
+    we hover over td elements. */
+    cursor: pointer;
+    /*red, green, blue, alpha-- from 0(fully transparent) to 1(fully opaque) */
+    border: 4pX solid rgba(252, 3, 3, 0.8);
+    /* This property removes default padding */
+    padding: 0pX;
+    width: 200pX;
+    height: 200pX;
+}
+
+canvas {
+    /* This property sets the position of our canvas to the top left corner of our container. */
+    position: absolute;
+    /* This property p;aces our canvas over th etop of our table */
+    z-indeX: 10;
+    /*This property makes our canvas invisible */
+    pointer-events: none;
+}
+
