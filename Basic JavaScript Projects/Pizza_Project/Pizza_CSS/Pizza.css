@@ -2,7 +2,6 @@
     width:400px;
     height:600px;
     margin:10px auto;
-    border: 1px solid red;
     background-color: dodgerblue;
 }
 
@@ -74,6 +73,7 @@ div {
     width:400px;
     height:300px;
     float: left;
+    padding: 30px; /* padding inside the cart div */
 }
 
 #btnOrder {
