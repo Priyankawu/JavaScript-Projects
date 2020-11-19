@@ -1,6 +1,6 @@
 #menuBG {
     width:400px;
-    height:470px;
+    height:600px;
     margin:10px auto;
     border: 1px solid red;
     background-color: dodgerblue;
@@ -9,7 +9,7 @@
 #frmMenu {
     width:600px;
     height:200px;
-    border: 2px solid blueviolet;
+   
 }
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -26,15 +26,17 @@ div {
     color: white;
 }
 
-.left {
-    width:200;
+
+.menu_left {
+    width:auto;     /* changed from 200px for three sections to auto */
     height:200px;
     float:left;
-    border: 1px solid black;
+    
 }
 
+/* I didn't use these, just used .left to float the divs to the left 
 .center {
-    width: 200px;
+    width: auto;
     height: 200px;
     float: left;
     border: 1px solid red;
@@ -42,12 +44,14 @@ div {
 
 
 .right {
-    width:200;
+    width:auto;
     height:200px;
-    float:right;
-    border: 1px solid green;
+    float:left;
+    border: 1px solid red;
 }
-
+ */
+ 
+ 
 #showText {
     width:200px;
     height:190px;
@@ -59,14 +63,17 @@ div {
     width:200px;
     height:190px;
     margin:0 auto;
-    float:right;
+    float:left;         /* right on website */
+    /*border: 1px, solid black;*/
 }
+
 
 #cart {
     top:0;
     margin:0px auto;
     width:400px;
-    height:200px;
+    height:300px;
+    float: left;
 }
 
 #btnOrder {
