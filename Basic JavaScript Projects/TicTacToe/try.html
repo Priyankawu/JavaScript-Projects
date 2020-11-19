@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+    <p id="arr">Replace this</p>
+
+    <p id="some"> .some() for arrays</p>
+
+    <script>
+        var str =  (val) => "How are you" +val;
+        document.getElementById("arr").innerHTML = str(" the universe? ");
+    
+
+
+    // arrary.some(5) -- Is there some value in the array that is 5
+    arr = [2, 5, 10, 15, 104];
+
+    function isBiggerThan100(n){
+        return n > 100;
+    }
+    document.getElementById("some").innerHTML = arr.some(isBiggerThan100) ;
+
+</script>
+</body>
