@@ -1,0 +1,34 @@
+<!-- sticky.html automatic slideshow -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,
+    initial-scale=1">
+    <link rel="stylesheet" href="try_final.css">
+    <script src="try_final.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <hr>
+    <div class="rel">
+        <button class="sticky open-button" onclick="openForm()">
+            Open Form </button>
+    </div>
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <h1>Login</h1>
+        <label for="email"> Email </label>
+        <input type="text" placeholder="Email" required>
+
+        <label for="password"> Password </label>
+        <input type="text" placeholder="Password" required>
+
+        <button type="submit" class="btn"> Login </button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+        Close</button>
+        </form>
+    </div>
+</body>
+</html>
