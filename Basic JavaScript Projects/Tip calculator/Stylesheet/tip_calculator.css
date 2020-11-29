@@ -1,0 +1,28 @@
+button {
+    margin: 10px;
+}
+
+.container_1 {
+    border: 1px solid red;
+    padding: 10px;
+    
+}
+
+.col_1 {
+    width: 50%;
+    border: 1px solid gray;
+    background: lightgray;
+    float: left;
+    /* ?? doesn't work */
+    overflow: hidden;   /* to hide col1 from protruding from the container */
+}
+
+/* ?? If i put float: left in col_2, col_2 goes down. Why? */ 
+.col_2 {
+    background: lightgray;
+    border: 1px solid blue;  
+}
+
+input {
+    margin: 10px;
+}

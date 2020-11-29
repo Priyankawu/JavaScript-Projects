@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tip calculator</title>
+        <link rel="stylesheet" type="text/css" href="./Stylesheet/tip_calculator.css">
+        <script src="JS/tip_calculator.js" defer></script>
+    </head>   
+    <body>
+        <h1>Tip Calculator</h1>
+       <div class="container_1">
+            <div class="col_1">
+                <label>Enter the cost of meal</label><br>
+                <input id="Cost" type="text"> <br>
+                <label> Total:</label><br>
+                <input id="Total" type="text"><br>
+                <button onclick="display()">Enter</button>
+                <button onclick="clear()">Clear</button>
+           </div>
+           <div class="col_2">
+               <div>
+                   <button type="submit" onclick="calculate_tip(15)" value="15">15%</button>
+                   <button type="submit" onclick="calculate_tip(18)" value="18">18%</button>
+                <br>
+                   <button type="submit" onclick="calculate_tip(20)"  value="20">20%</button>
+                   <button type="submit" onclick="calculate_tip(25)" value="25">25%</button>
+               <br>
+                   <label>Custom tip</label>
+                   <input id="custom" type="text"> 
+                   <br>
+                   <!-- Radio buttons need to have the same name, so only one out of that group 
+                        is checked, otherwise all will be checked-->
+                   <input type="radio" id = "dollars" name="same_group" value="dollars">Dollars
+                   <input type="radio"id="percentage"  name="same_group" value="percentage">Percentage
+               </div>
+
+           </div>
+       </div> 
+    </body>
+</html>
