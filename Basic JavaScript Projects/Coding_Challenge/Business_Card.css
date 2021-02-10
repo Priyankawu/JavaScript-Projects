@@ -1,0 +1,42 @@
+.row1{
+    border: 1px solid black;
+}
+
+.col1{
+    width: 50%;
+    border: 1px solid red;
+    float: left;
+}
+
+/* why this column is full wide? */
+.col2{
+    border: 2px solid blue;
+    
+}
+
+.color_button_left{
+    width: 90px;
+    height: 40px;
+    margin: 10px;
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.pink{
+    background-color: pink;
+}
+
+/* how to align right button to the right? */
+.color_button_right{
+    width: 90px;
+    height: 40px;
+    margin: 10px;
+    margin-right: 10px; //not working
+}

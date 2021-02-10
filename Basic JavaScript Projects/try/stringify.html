@@ -1,0 +1,24 @@
+<!-- JSON.stringify(): takes JS object and changes it to a string -->
+<!DOCTYPE>
+<html lang="eng">
+    <head>
+
+    </head>
+    <body>
+        <p id="myDog"></p>
+        <p id="myDog1"></p>
+
+        <script>
+            var dog={name:"Dax", breed:"Great Pyreness", color:"White"};
+            var JSONstring = JSON.stringify(dog);
+            document.getElementById("myDog").innerHTML = JSONstring;
+
+            //JSON.parse(): takes JSON string and changes it to JS object -->
+            
+            var dogstring= '{"name":"Dax", "breed":"Great Pyreness", "color":"White"}';
+            var JSONobject = JSON.parse(dogstring);
+            document.getElementById("myDog1").innerHTML=JSONobject.name +" the "+JSONobject.breed;
+        </script>
+
+    </body>
+</html>

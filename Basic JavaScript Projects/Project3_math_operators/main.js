@@ -35,13 +35,19 @@ function negate(){
 function increment(){
     var x=5;
     x++;
-    document.write(x); //erases everything else
+	document.getElementById("inc").innerHTML = x;
+	
+    //document.write(x); //erases everything else
 }
 
 function decrement(){
     var x = 5.25;
     x--;
-    document.write(x);
+	document.getElementById("dec").innerHTML = x;
+  }
+
+function random_number(){
+	document.getElementById("rand").innerHTML = Math.random();
 }
 
 window.alert(Math.random()); //gives value between 0 and 1

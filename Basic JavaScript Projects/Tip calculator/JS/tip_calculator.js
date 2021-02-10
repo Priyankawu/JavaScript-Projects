@@ -1,6 +1,6 @@
-var Total = 0;
 
-var tip = 0;
+
+
 
 function display(){
    console.log(Total);
@@ -9,24 +9,19 @@ function display(){
    document.getElementById("Total").value=Total; 
 }
 
-//calculates the Total amount after tip
+//calculates & displays the Total amount after tip
 function calculate_tip(n){
-    Total = 0;
+    var Total = 0;
     var cost = parseInt(document.getElementById("Cost").value);
     console.log("cost was: "+document.getElementById("Cost").value);
    //parseInt(string) changes string to int
-    
-    console.log("tip is: "+ n);
-    console.log("cost is "+cost);
     tip = cost * (n/100);
-    console.log("tip "+tip);
     Total = cost+tip;
-    console.log("cost+tip"+Total);
-    
+    document.getElementById("Total").value=Total; 
 }
 
-//??? not working
-function clear(){
+// clears the input fields
+function clearFields(){
     console.log("hello");
     var arr = document.getElementsByTagName("input");
     console.log(" the arr is "+arr);
@@ -40,11 +35,11 @@ function clear(){
 
 //calculates the Total amount after tip
 function custom_tip(){
-    Total = 0;
+    var Total = 0;
     if (document.getElementById("percentage").checked || document.getElementById("dollars").checked) {
         var n = document.getElementById("custom").value;
         var cost = parseInt(document.getElementById("Cost").value);
-    //var tip;
+    var tip;
     //if % is checked, calculate that
         if(document.getElementById("percentage").checked) {
             tip = cost * (n/100);
@@ -57,4 +52,5 @@ function custom_tip(){
         }
     Total = cost +tip;
     }
+    document.getElementById("Total").value=Total;
 }
