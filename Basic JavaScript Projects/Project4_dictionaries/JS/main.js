@@ -20,6 +20,19 @@ function my_Dictionary(){
         document.getElementById("Test1").innerHTML=isNaN("007");
     }
 
+function del(){
+	   var Animal ={
+        Species:"Dog", 
+        Color:"Red", 
+        Breed:"Labrador", 
+        Age: 5, 
+        Sound: "Bark!"
+    };
+	document.getElementById("del_value").innerHTML = "The value of Animal Species: " + Animal.Species + ", will be deleted.";
+	delete Animal.Species;
+	document.write(Animal.Species);
+	
+}
     document.write(2E309); //positive infinity
     document.write(3E309); //negative infinity
     //delete Animal.Sound; //word operator
